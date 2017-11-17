@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+<script type="text/javascript">
+	var email = document.getElementById("mail");
+
+email.addEventListener("input", function () {
+if (email.validity.typeMismatch) {
+email.setCustomValidity("I expect an e-mail");
+} else {
+email.setCustomValidity("");
+}
+});
+</script>
+ </head>
+
+<body>
+
+<form novalidate>
+
+  <label for="mail">I would like you to provide me an e-mail</label>
+  <input id="mail" type="email" name="mail" required />
+  <button>Submit</button>
+</form>
+
+</body>
+<!--<script type="text/javascript" src="js.js"></script>-->
+</html>

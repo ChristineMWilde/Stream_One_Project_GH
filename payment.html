@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width">
+	 	<title>Booking Payment</title>
+	 	<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' />
+	 	<link rel='stylesheet' type='text/css' href='css/my_css.css' />
+	 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+	</head>
+
+<body id="payment">
+
+	<nav class="navbar navbar-inverse">		
+		<div class='container'>
+		    <div class="nav navbar-header">
+		    	<a class="navbar-brand" id= 'cinnamon' href="home.html">Cinnamon Magic Austria</a>
+		       	<button type="button" class="navbar-toggle" 
+		    		data-toggle="collapse" 
+		    		data-target="#myNavMenu">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+		    </div>	    
+		    <ul id="myNavMenu" class="nav navbar-nav collapse navbar-collapse navbar-right">
+				<li><a href="home.html">Home</a></li>
+			     <li><a href="about_us.html">About Us</a></li>
+			     <li><a href="bakery_product.html">Bakery Products</a></li>
+			     <li><a href="order_online.html">Order Online</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+
+
+<!--payment-->
+<div id="containerForm">
+	<form name="onlinePayment"> 
+
+		<fieldset id="payment">
+			<legend>Card details:</legend>
+			<input id="visa" type="radio" name="card" value="visa" />
+			<label for="visa">Visa:</label>
+			
+			<input id="masterCard" type="radio" name="card" value="MasterCard" />
+			<label for="MasterCard">MasterCard:</label>
+
+			<label for="expDate" class="field">Expiry Date:</label>
+			<input type="date" id="expDate" name ="expiryDate" placeholder="Required Field" required />
+
+			<label for="cardNumber" class="field">Card Number:</label>
+			<input type="number" id="cardNumber" name ="card" placeholder="Required Field" />
+
+		</fieldset>
+<br/>
+
+
+<button onclick="payOrder()">Submit</button>
+
+</form>
+</div>
+
+
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src='bootstrap/js/bootstrap.min.js'></script>
+<script type="text/javascript" src="js/my_jsscript.js"></script>
+</html>
