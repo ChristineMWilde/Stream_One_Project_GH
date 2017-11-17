@@ -1,6 +1,6 @@
 Note: README.txt currently in progress :)
 
-#Christine Wilde's Stream One Project
+# Christine Wilde's Stream One Project
 
 The project is an Austrian Bakery Website called **Cinnamon Magic**
 
