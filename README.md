@@ -22,23 +22,23 @@ Using the technologies above the below Website features were achieved:
 1. ## Home page
 This includes Bootstrap nav bar, a CSS animated banner directing users to the online booking page using JQuery, a JavaScript store look-up and store opening times.
 
-1. ## About Us page
+2. ## About Us page
 This includes Boostrap nav bar, jumbotron div and modal
 
-1. ## Bakery Products
+3. ## Bakery Products
 This page has an audio file playing Mozart, a Bootstrap carousel and thumbnails. There is also a translate feature using JavaScript.
 
-1. ## Order Online
+4. ## Order Online
 The order online page has a HTML form for users to complete using JavaScript code for validation.
 
-1. ## Payment Page
+5. ## Payment Page
 This is a short form in order for users to complete payment. Users are redirected after successfully filling out the order online form.
 
 My own JavaScript and JQuery files are found under js folder.
 
 TESTING observations:
 
-  * The DOM did not load property which is a [common error] (https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded)
+  * The DOM did not load property which is a [common error](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded)
 So an Event Listener property was added to the JavaScript files. 
   
   * JQuery was used for certain interactive coding but most of that was updated to use JavaScript instead e.g creating a dictionary for the Bakery Products translation feature.
