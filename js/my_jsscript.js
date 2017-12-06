@@ -5,6 +5,42 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
+/*Home page - lookup Cinnemon Magic Store Address function*/
+
+function store(storeLookup){
+
+var storeLookup = {
+
+  england: "2 Bank Street, London, EC1, Tel:123456",
+  ireland: "Temple Bar, Dublin 2, Tel: 123456",
+  wales: "21 David's Avenue, Cardiff, Tel:123456",
+  scotland: "South Bridge, Edinburgh EH8, Tel:123456",
+};
+
+  var country = document.getElementById("country");
+      if (country.value == "england") {
+        document.getElementById("storeAddress").innerHTML = storeLookup.england;
+      }
+
+      else if (country.value == "ireland") {
+        document.getElementById("storeAddress").innerHTML = storeLookup.ireland;
+       }
+
+      else if (country.value == "wales") {
+        document.getElementById("storeAddress").innerHTML = storeLookup.wales;
+        }
+
+      else if (country.value == "scotland") {
+        document.getElementById("storeAddress").innerHTML = storeLookup.scotland;
+        }
+  
+      else {
+        document.getElementById("storeAddress").innerHTML = "Sorry there's an error";
+       }
+  }
+
+/*Order Online page - form validation function*/
+
  function validateForm() {
  var a = document.forms["OrderOnline"]["fname"].value;
  var b = document.forms["OrderOnline"]["sname"].value;
@@ -46,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }
 
 
+/*Order Online page - production availability function*/
 
 function cakeAvail(){
   var cakeQuantity = document.getElementById("quantity1");
@@ -75,29 +112,7 @@ function seasonalAvail(){
 }
 
 
-function store(){
-
-  var country = document.getElementById("country");
-      if (country.value == "england") {
-        document.getElementById("storeAddress").innerHTML = "2 Bank Street, London, EC1 ";
-      }
-
-      else if (country.value == "ireland") {
-        document.getElementById("storeAddress").innerHTML = "Temple Bar, Dublin 2";
-       }
-
-      else if (country.value == "wales") {
-        document.getElementById("storeAddress").innerHTML = "21 David's Avenue, Cardiff";
-        }
-
-      else if (country.value == "scotland") {
-        document.getElementById("storeAddress").innerHTML = "South Bridge, Edinburgh EH8";
-        }
-  
-      else {
-        document.getElementById("storeAddress").innerHTML = "Sorry there's an error";
-       }
-  }
+/*Payment page - payment form validation function*/
 
   function payOrder(){
    var card = document.forms["onlinePayment"]["cardNumber"].value;
@@ -109,7 +124,46 @@ function store(){
     
   }
 
-  
+
+/*Bakery Products page - translation dictionary. Global variable can be accessed throughout the project*/
+   var translation = {
+
+  savoryDE: "Wir haben eine Auswahl an besten österreichischen herzhaften Produkten, darunter österreichische Knödel, Eintopf und Nudeln",
+  savoryEN: "We have a selection of finest austrian savory products including austrian dumplings, stew and noodels",
+  cakeDE: "Wir haben eine Auswahl an hervorragenden österreichischen Kuchen, darunter Strudel und Sachertorte",
+  cakeEN: "We have a selection of superb austrian cakes including strudel and sachertorte",
+  seasonalDE:"Die saisonale Auswahl umfasst Weihnachtskuchen und Kekse",
+  seasonalEN:"The seasonal selection is here including Christmas cakes and biscuits",
+};
+function savoryTranslationDE(translation){
+  var de1 = document.getElementById("translate1")
+  de1.innerHTML = translation.savoryDE;
+}
+
+function savoryTranslationEN(translation){
+  var en1 = document.getElementById("translate1")
+  en1.innerHTML = translation.savoryEN;
+}
+
+function cakeTranslationDE(translation){
+  var de2 = document.getElementById("translate2")
+  de2.innerHTML = translation.cakeDE;
+}
+
+function cakeTranslationEN(translation){
+  var en2 = document.getElementById("translate2")
+  en2.innerHTML = translation.cakeEN;
+}
+
+function seasonalTranslationDE(translation){
+  var de3 = document.getElementById("translate3")
+  de3.innerHTML = translation.seasonalDE;
+}
+
+function seasonalTranslationEN(translation){
+  var en3 = document.getElementById("translate3")
+  en3.innerHTML = translation.seasonalEN;
+}
 
 
 

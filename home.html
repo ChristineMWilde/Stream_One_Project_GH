@@ -2,7 +2,7 @@
 <html>
 <head>
 	 <meta charset="UTF-8">
-	 <meta name="viewport" content="width=device-width">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 	<title>Cinnamon_Magic</title>
 	 	<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' />
 	 	<link rel='stylesheet' type='text/css' href='css/my_css.css' />
@@ -40,15 +40,13 @@
 
 
 <div class='container'>
-        <!--<div class='row'>
-            <div class='col-md-12'>-->
-                
+                      
                 <div class="introBox"><h1>Welcome to our bakery</h1><p>
                     Welcome to Cinnamon Magic, the authentic Austrian bakery.
                 </p>
 
                 <fieldset id="countryDD">
-                <legend class="findStore">Find a Cinnamon Magic Store:</legend>
+                <legend class="inputTitle">Find a Cinnamon Magic Store:</legend>
                 <select id="country">
                     <option class="stores" value="england">England</option>
                     <option class="stores" value="ireland">Ireland</option>
@@ -56,21 +54,35 @@
                     <option class="stores" value="scotland">Scotland</option>
                   </select>
                   <button type="submit" onClick="return store()">Find</button>
-                  <div><p id="storeAddress"></p></div>
+                  <p id="storeAddress"></p>
             </fieldset>
-            
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Store Opening Times</button>
+                <!--Format the Modal i.e the popup window-->
+			<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog"> <!--dialog set proper width and margin for modal-->
+		<div class="modal-content">
+ 		<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		<h4 class="modal-title">Our Bakery/Cafe Opening Times</h4>
+		</div><!--close header div-->
+		<div class="modal-body">
+			<p>Monday - Friday: 10:00am to 8pm</p>
+			<p>Saturday and Sunday: 10:00am to 5pm</p>
+		</div><!--close body div-->
+				<!--footer button with close-->
+<div class="modal-footer">
+ <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+ 	</div><!--close footer div-->
 
+ </div><!--close open modal div-->
+ </div><!--close modal popup window div-->
+ </div><!--close modal content div-->
         </div>
     </div>
                 
 
 
-
-
-
-
-
-	<footer><a href="#" id='copyright'><p>Copyright&nbsp&copy </a>&nbsp&nbsp <a href="#" id='fb'>Facebook</a>&nbsp&nbsp <a href="#" id='twitter'>Twitter</a></p>
+	<footer><a href="#" class="footer"><p>Copyright&nbsp&copy </a>&nbsp&nbsp <a href="#" class="footer">Facebook</a>&nbsp&nbsp <a href="#" class="footer">Twitter</a></p>
 	</footer>
 
 		</body>

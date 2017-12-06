@@ -1,4 +1,5 @@
 
+
 /*Welcome page*/
 
 #home{
@@ -28,6 +29,7 @@
 
 
 
+
 .introBox{
 	height: 380px;
 	width: 700px;
@@ -39,14 +41,16 @@
 	border-radius: 15px;
 	color: rgb(153, 153, 102);
 	font-family: 'Courgette', cursive;
-	font-size: 20px;
+	font-size: 20px;}
 	
 
-}
 
-.findStore{
+
+.findStore {
 	color:rgb(153, 153, 102);
 }
+
+
 
 
 
@@ -84,11 +88,16 @@
 
 
 /*footer style*/
+.footer{
+	
+	color: #0000cc;
+
+}
+
 footer{
 	margin-top: 20%;
 	font-size: 15px;
 	font-weight: bold;
-	color: #0000ff;
 	text-align: center;
 }
 
@@ -141,6 +150,10 @@ margin-top: 80px;
 border-style: groove;
 border-color:#800000;
 
+}
+.carousel-caption {
+	color: #ff80c1;
+	font-weight: bold;
 }
 
 #audio{
@@ -214,7 +227,7 @@ audio {
             margin: auto;
          }
 
-form{
+form {
     width: 550px;
     border: 1px solid #999;
     border-radius: 20px;
@@ -222,16 +235,26 @@ form{
     padding: 20px;
     margin-top: 50px;
     margin-bottom: 100px;
-    background-color: rgba(129, 187, 201, .2);
+    background-color: rgb(128, 0, 0);
     color: black;
 }
 
-label.field,
-    legend {
-        display: block;
-        text-align: left;
-        width: 100px;
-            }
+.inputTitle{
+
+	font-size: 20px;
+	color: rgb(102, 153, 255);
+}
+
+
+label.field {
+	width: 200px;
+	padding-bottom: 5px;
+}
+
+
+
+
+
 
 
 

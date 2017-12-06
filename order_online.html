@@ -38,20 +38,17 @@
 	<div id="containerForm">
      <form name="OrderOnline"> 
 
-            <h1>Order Online</h1>
-            <h2>Your Details</h2>
+        <h1>Order Online</h1>
+              <p class ="inputTitle">Your Details</p>
+              
+              <fieldset class="userDetails">
+              <label for="email" class="field">Email:</label>
+              <input type="email" id="mail" name ="mail">
 
-        <label for="firstName" class="field">Email:</label>
-        <input type="email" id="mail" name ="mail">
+              <label for="password" class="field">Password:</label>
+              <input type="password" id="pword" name ="password">
 
-        <label for="firstName" class="field">Password:</label>
-        <input type="password" id="pword" name ="password">
-
-       
-            <fieldset class="userDetails">
-
-
-                <label for="firstName" class="field">First Name:</label>
+               <label for="firstName" class="field">First Name:</label>
                 <input type="text" id="fname" name ="fname" class="userInput" />
                
 				
@@ -59,7 +56,7 @@
                 <input type="text" id="sname" name="input" class="userInput" />
                 
                 
-                <h3>Address:</h3>
+                <p class="inputTitle">Address:</p>
                 <label for="street" class="field">Street:</label>
                 <input type="text" id="street" name="input" class="userInput" />
 
@@ -68,11 +65,10 @@
 
                 <label for="pCode" class="field">Postcode:</label>
                 <input id="pCode" name="input" class="userInput" />
-                
-               </fieldset>
+                </fieldset>
 
                   <fieldset id="countryDD">
-                <legend>Country</legend>
+                <legend class="inputTitle">Country</legend>
                 <select id="country">
                     <option value="england">England</option>
                     <option value="ireland">Ireland</option>
@@ -83,10 +79,10 @@
 
             <h2>Select Your Box of Treats</h2>
               
-                <h2>Your Selections</h2>
+                
  				<fieldset id="radioCake">
-                <legend>Cakes:</legend>
-                <input id="strudel" type="radio" name="selection1" value="strudel" />
+                <legend class="inputTitle">Cakes:</legend>
+                <input id="strudel" type="radio" name="selection1" value="strudel"/>
                 <label for="strudel">Strudel</label>
                 <input id="sachertorte" type="radio" name="selection1" value="sachertorte" />
                 <label for="sachertorte">Sachertorte</label>
@@ -96,11 +92,10 @@
                     <option value="20">20</option>
                     <option value="30">30</option>
                    </select> 
-
                 </fieldset>
 
                 <fieldset id="radioSavory">
-                <legend>Savory:</legend>
+                <legend class="inputTitle">Savory:</legend>
                 <input id="dumpling" type="radio" name="selection2" value="dumpling" />
                 <label for="dumpling">Dumplings</label>
                 <input id="stew" type="radio" name="selection2" value="stew" />
@@ -114,7 +109,7 @@
                 </fieldset>
 
                 <fieldset id="radioSeasonal">
-                <legend>Seasonal:</legend>
+                <legend class="inputTitle">Seasonal:</legend>
                 <input id="cookies" type="radio" name="selection3" value="cookies" />
                 <label for="cookies">Cookies</label>
                 <input id="chocolate" type="radio" name="selection3" value="chocolate" />
@@ -136,6 +131,10 @@
 
 
 </form>
+
+<footer><a href="#" class="footer"><p>Copyright&nbsp&copy </a>&nbsp&nbsp <a href="#" class="footer">Facebook</a>&nbsp&nbsp <a href="#" class="footer">Twitter</a></p>
+  </footer>
+  
 </div>
 
 

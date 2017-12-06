@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+
+<script>
+
+function store(){
+
+	var country = document.getElementById("country");
+	
+	if (country.value == "england") {
+		document.getElementById("storeAddress").innerHTML = "2 Bank Street";
+			}
+
+  else if (country.value == "ireland") {
+    document.getElementById("storeAddress").innerHTML = "2 Dublin";
+
+	}
+
+  else if (country.value == "wales") {
+    document.getElementById("storeAddress").innerHTML = "2 Cardiff";
+  }
+
+  else if (country.value == "scotland") {
+    document.getElementById("storeAddress").innerHTML = "2 Edinburgh";
+  }
+  else {
+    document.getElementById("storeAddress").innerHTML = "Sorry there's an error";
+  }
+  }
+
+</script>
+
+
+ </head>
+
+<body>
+
+<div>
+<fieldset id="countryDD">
+                <legend>Country</legend>
+                <select id="country">
+                    <option class="stores" value="england">England</option>
+                    <option class="stores" value="ireland">Ireland</option>
+                    <option class="stores" value="wales">Wales</option>
+                    <option class="stores" value="scotland">Scotland</option>
+                  </select>
+                  <button type="submit" onClick="return store()">Find</button>
+            </fieldset>
+
+        </div>
+
+ <div><p id="storeAddress"></p></div>
+
+</body>
+<!--<script type="text/javascript" src="js.js"></script>-->
+</html>
