@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+   
+    <link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' />
+    <link rel='stylesheet' type='text/css' href='css/my_css.css' />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  </head>
+
+ <body id="about">
+
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+
+    <!--construct a new Google map object and add properties to the map-->
+    <script>
+   function initMap() {
+  var london = {lat: 51.509, lng: -0.076};
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: london
+  });
+  var marker = new google.maps.Marker({
+    position: london,
+    map: map
+  });
+}
+    </script>
+
+    <!--Callback to initiate the initMap function above while the API loads. API key is available on Google-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0gEIC9xgLBElRAO7HpH55XQYDKXtN5N8&callback=initMap">
+    </script>
+
+  </body>
+  
+</html>
