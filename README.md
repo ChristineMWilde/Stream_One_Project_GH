@@ -57,7 +57,7 @@ The below table explains how to deploy the application.
 ```
 
 
-#####TESTING observations:
+**TESTING observations:**
 
   * The DOM did not load property which is a [common error](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded)
 So an Event Listener property was added to the JavaScript files. 
