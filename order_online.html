@@ -1,145 +1,139 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8">
-	 <meta name="viewport" content="width=device-width">
-	 	<title>Order Online</title>
-	 	<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' />
-	 	<link rel='stylesheet' type='text/css' href='css/my_css.css' />
-	 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Order Online</title>
+    <link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' />
+    <link rel='stylesheet' type='text/css' href='css/my_css.css' />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
-	</head>
+</head>
 
-<body id="order">
+<body id="order-page-image">
 
-	<nav class="navbar navbar-inverse">		
-		<div class='container'>
-		    <div class="nav navbar-header">
-		    	<a class="navbar-brand" id= 'cinnamon' href="home.html">Cinnamon Magic Austria</a>
-		       	<button type="button" class="navbar-toggle" 
-		    		data-toggle="collapse" 
-		    		data-target="#myNavMenu">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			    </button>
-		    </div>	    
-		    <ul id="myNavMenu" class="nav navbar-nav collapse navbar-collapse navbar-right">
-				<li><a href="home.html">Home</a></li>
-			     <li><a href="about_us.html">About Us</a></li>
-			     <li><a href="bakery_products.html">Bakery Products</a></li>
-			     <li><a href="order_online.html">Order Online</a></li>
-			     </ul>
-		</div>
-	</nav>
+    <nav class="navbar navbar-inverse">
+        <div class='container'>
+            <div class="nav navbar-header">
+                <a class="navbar-brand" id='navbar-cinnamon' href="home.html">Cinnamon Magic Austria</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavMenu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <ul id="myNavMenu" class="nav navbar-nav collapse navbar-collapse navbar-right">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="bakery_products.html">Bakery Products</a></li>
+                <li><a href="order_online.html">Order Online</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <div id="order-form">
+        <form name="OrderOnline">
 
-	<div id="containerForm">
-     <form name="OrderOnline"> 
+            <h1>Order Online</h1>
+            <p class="inputTitle">Your Details</p>
 
-        <h1>Order Online</h1>
-              <p class ="inputTitle">Your Details</p>
-              
-              <fieldset class="userDetails">
-              <label for="email" class="field">Email:</label>
-              <input type="email" id="mail" name ="mail">
+            <fieldset class="userDetails">
+                <label for="email" class="field">Email:</label>
+                <input type="email" id="mail" name="mail">
 
-              <label for="password" class="field">Password:</label>
-              <input type="password" id="pword" name ="password">
+                <label for="password" class="field">Password:</label>
+                <input type="password" id="pword" name="password">
 
-               <label for="firstName" class="field">First Name:</label>
-                <input type="text" id="fname" name ="fname" class="userInput" />
-               
-				
-				<label for="surName" class="field">Surname:</label>
+                <label for="firstName" class="field">First Name:</label>
+                <input type="text" id="fname" name="fname" class="userInput" />
+
+                <label for="surName" class="field">Surname:</label>
                 <input type="text" id="sname" name="input" class="userInput" />
-                
-                
+
                 <p class="inputTitle">Address:</p>
                 <label for="street" class="field">Street:</label>
                 <input type="text" id="street" name="input" class="userInput" />
 
                 <label for="town" class="field">Town:</label>
-                <input id="town" name="input" class="userInput"/>
+                <input id="town" name="input" class="userInput" />
 
                 <label for="pCode" class="field">Postcode:</label>
                 <input id="pCode" name="input" class="userInput" />
-                </fieldset>
+            </fieldset>
 
-                  <fieldset id="countryDD">
+            <fieldset id="country-drop-down">
                 <legend class="inputTitle">Country</legend>
-                <select id="country">
+                <select id="country-order-form">
                     <option value="england">England</option>
                     <option value="ireland">Ireland</option>
                     <option value="wales">Wales</option>
                     <option value="scotland">Scotland</option>
-                  </select>
+                </select>
             </fieldset>
 
             <h2>Select Your Box of Treats</h2>
-              
-                
- 				<fieldset id="radioCake">
+
+            <fieldset id="radioCake">
                 <legend class="inputTitle">Cakes:</legend>
-                <input id="strudel" type="radio" name="selection1" value="strudel"/>
+                <input id="strudel" type="radio" name="cake-order-selection" value="strudel" />
                 <label for="strudel">Strudel</label>
-                <input id="sachertorte" type="radio" name="selection1" value="sachertorte" />
+                <input id="sachertorte" type="radio" name="cake-order-selection" value="sachertorte" />
                 <label for="sachertorte">Sachertorte</label>
-                <select id ="quantity1" onchange="cakeAvail()">
+                <select id="cake-order-quantity" onChange="return productAvailability()">
                     <option value="default"></option>
-                   <option value="10">10</option>
+                    <option value="10">10</option>
                     <option value="20">20</option>
                     <option value="30">30</option>
-                   </select> 
-                </fieldset>
+                </select>
+            </fieldset>
 
-                <fieldset id="radioSavory">
+            <fieldset id="radioSavory">
                 <legend class="inputTitle">Savory:</legend>
-                <input id="dumpling" type="radio" name="selection2" value="dumpling" />
+                <input id="dumpling" type="radio" name="savory-order-selection" value="dumpling" />
                 <label for="dumpling">Dumplings</label>
-                <input id="stew" type="radio" name="selection2" value="stew" />
+                <input id="stew" type="radio" name="savory-order-selection" value="stew" />
                 <label for="stew">Stew</label>
-                <select id ="quantity2" onchange="savoryAvail()">
+                <select id="savory-order-quantity" onChange="return productAvailability()">
                     <option value="default"></option>
-                   <option value="10">10</option>
+                    <option value="10">10</option>
                     <option value="20">20</option>
                     <option value="30">30</option>
-                   </select> 
-                </fieldset>
+                </select>
+            </fieldset>
 
-                <fieldset id="radioSeasonal">
+            <fieldset id="radioSeasonal">
                 <legend class="inputTitle">Seasonal:</legend>
-                <input id="cookies" type="radio" name="selection3" value="cookies" />
+                <input id="cookies" type="radio" name="seasonal-order-selection" value="cookies" />
                 <label for="cookies">Cookies</label>
-                <input id="chocolate" type="radio" name="selection3" value="chocolate" />
+                <input id="chocolate" type="radio" name="seasonal-order-selection" value="chocolate" />
                 <label for="chocolate">Christmas Chocolate</label>
-                <select id ="quantity3" onchange="seasonalAvail()">
+                <select id="seasonal-order-quantity" onChange="return productAvailability()">
                     <option value="default"></option>
-                   <option value="10">10</option>
+                    <option value="10">10</option>
                     <option value="20">20</option>
                     <option value="30">30</option>
-                   </select> 
-                
-                 <label for="submit" class="field"></label>
-  				
-                </fieldset>
+                </select>
 
+                <label for="submit" class="field"></label>
 
- 
-<button onclick="validateForm()">Submit</button>
+            </fieldset>
 
+            <button onclick="validateForm()">Submit</button>
 
-</form>
+        </form>
 
-<footer><a href="#" class="footer"><p>Copyright&nbsp&copy </a>&nbsp&nbsp <a href="#" class="footer">Facebook</a>&nbsp&nbsp <a href="#" class="footer">Twitter</a></p>
-  </footer>
-  
-</div>
+        <footer>
+            <a href="#" class="footer">
+                <p>Copyright&nbsp&copy </a>&nbsp&nbsp <a href="#" class="footer">Facebook</a>&nbsp&nbsp <a href="#" class="footer">Twitter</a></p>
+        </footer>
 
+    </div>
 
 </body>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src='bootstrap/js/bootstrap.min.js'></script>
 <script type="text/javascript" src="js/my_jsscript.js"></script>
+
 </html>

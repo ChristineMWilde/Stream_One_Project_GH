@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <script>
-  
         var translation = {
 
-  savoryDE: "Wir haben eine Auswahl an besten österreichischen herzhaften Produkten, darunter österreichische Knödel, Eintopf und Nudeln",
-  savoryEN: "We have a selection of finest austrian savory products including austrian dumplings, stew and noodels"
-};
-function savoryTranslationDE(translation){
-  var de = document.getElementById("demo")
-  de.innerHTML = translation.savoryDE;
-}
+            savoryDE: "Wir haben eine Auswahl an besten österreichischen herzhaften Produkten, darunter österreichische Knödel, Eintopf und Nudeln",
+            savoryEN: "We have a selection of finest austrian savory products including austrian dumplings, stew and noodels"
+        };
+
+        function savoryTranslationDE(translation) {
+            var de = document.getElementById("demo")
+            de.innerHTML = translation.savoryDE;
+        }
     </script>
 </head>
-<body><button onclick="savoryTranslationDE(translation)">submit</button><div id ="demo"></div></body>
+
+<body>
+    <button onclick="savoryTranslationDE(translation)">submit</button>
+    <div id="demo"></div>
+</body>
+
 </html>
 

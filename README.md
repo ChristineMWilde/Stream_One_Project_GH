@@ -36,7 +36,28 @@ This is a short form in order for users to complete payment. Users are redirecte
 
 My own JavaScript and JQuery files are found under js folder.
 
-TESTING observations:
+### Installation
+
+The below table explains how to deploy the application.
+
+
+
+```sh
+
+1. Download all files from https://github.com/ChristineMWilde/Stream_One_Project_GH. 
+
+2. The test folder can be excluded if needed.
+
+3. The prototype folder can be excluded if needed.
+
+4. Click on home.html file. Once the page launches users can navigate all other html pages using the Bootstrap navbar.
+
+5. Please read "FinalProjectStreamOne.doc" for detailed information on this project. This document is found under the folder "Documentation for project" folder
+
+```
+
+
+#####TESTING observations:
 
   * The DOM did not load property which is a [common error](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded)
 So an Event Listener property was added to the JavaScript files. 

@@ -99,40 +99,41 @@ var storeLookup = {
 }
 
 
-/*Order Online page - production availability function*/
+/*Order Online page - product availability function. Use of Arrays*/
 
-function cakeAvail(){
-  var cakeQuantity = document.getElementById("quantity1");
-  if (cakeQuantity.value === "10") {
-  alert("sorry that quantity box is currently unavailable");
-} else {
+
+function productAvailability (quantityLookup) {
+
+var quantityLookup = ["10", "20", "30"];
+
+var cakeAvailability = document.getElementById("cake-order-quantity"); 
+var savoryAvailability = document.getElementById ("savory-order-quantity");
+var seasonalAvailability = document.getElementById ("seasonal-order-quantity");
+
+if (cakeAvailability.value === quantityLookup [0]) {
+  alert ("sorry this quantity isn't available");
+  } else if 
+(savoryAvailability.value === quantityLookup [1]) {
+  alert ("sorry this quantity isn't available");
+} else if 
+  
+  (seasonalAvailability.value === quantityLookup [2]) {
+    alert ("sorry this quantity isn't available");
+    }  else {
+
   return false;
-    }
+}
+  
 }
 
-function savoryAvail(){
-  var savoryQuantity = document.getElementById("quantity2");
-  if (savoryQuantity.value === "30") {
-  alert("sorry that quantity box is currently unavailable");
-} else {
-  return false;
-    }
-}
 
-function seasonalAvail(){
-  var seasonalQuantity = document.getElementById("quantity3");
-  if (seasonalQuantity.value === "10") {
-  alert("sorry that quantity box is currently unavailable");
-} else {
-  return false;
-    }
-}
 
 
 /*Payment page - payment form validation function*/
 
   function payOrder(){
    var card = document.forms["onlinePayment"]["cardNumber"].value;
+
      if ((card.length <=15)||(card.length =="")) {
       alert("please enter a valid card number");
     }else{
@@ -140,6 +141,9 @@ function seasonalAvail(){
     }
     
   }
+
+
+
 
 
 /*Bakery Products page - translation dictionary. Global variable can be accessed throughout the project*/
@@ -153,32 +157,32 @@ function seasonalAvail(){
   seasonalEN:"The seasonal selection is here including Christmas cakes and biscuits",
 };
 function savoryTranslationDE(translation){
-  var de1 = document.getElementById("translate1")
+  var de1 = document.getElementById("savory-translation")
   de1.innerHTML = translation.savoryDE;
 }
 
 function savoryTranslationEN(translation){
-  var en1 = document.getElementById("translate1")
+  var en1 = document.getElementById("savory-translation")
   en1.innerHTML = translation.savoryEN;
 }
 
 function cakeTranslationDE(translation){
-  var de2 = document.getElementById("translate2")
+  var de2 = document.getElementById("cake-translation")
   de2.innerHTML = translation.cakeDE;
 }
 
 function cakeTranslationEN(translation){
-  var en2 = document.getElementById("translate2")
+  var en2 = document.getElementById("cake-translation")
   en2.innerHTML = translation.cakeEN;
 }
 
 function seasonalTranslationDE(translation){
-  var de3 = document.getElementById("translate3")
+  var de3 = document.getElementById("seasonal-translation")
   de3.innerHTML = translation.seasonalDE;
 }
 
 function seasonalTranslationEN(translation){
-  var en3 = document.getElementById("translate3")
+  var en3 = document.getElementById("seasonal-translation")
   en3.innerHTML = translation.seasonalEN;
 }
 
