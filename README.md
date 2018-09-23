@@ -54,6 +54,8 @@ The below table explains how to deploy the application.
 
 5. Please read "FinalProjectStreamOne.doc" for detailed information on this project. This document is found under the folder "Documentation for project" folder
 
+6. For the live version please go to: https://gallant-agnesi-c75db0.netlify.com/home.html
+
 ```
 
 
