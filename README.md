@@ -44,7 +44,7 @@ The below table explains how to deploy the application.
 
 ```sh
 
-1. For the live version please go to: [https://gallant-agnesi-c75db0.netlify.com/home.html](https://gallant-agnesi-c75db0.netlify.com/home.html)
+1. For the live version please go to: [Cinnamon Magic Austria](https://gallant-agnesi-c75db0.netlify.com/home.html)
 
 2. To run locally download all files from https://github.com/ChristineMWilde/Stream_One_Project_GH.
 
