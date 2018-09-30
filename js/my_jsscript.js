@@ -107,7 +107,8 @@ if (cakeAvailability.value === quantityLookup [0]) {
     alert ("sorry this quantity isn't available");
     }  else {
 
-  return false;
+  return true;
+
 }
   
 }
