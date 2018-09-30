@@ -39,21 +39,6 @@ var storeLookup = {
        }
   }
 
-  /*About Us page - google map geolocation*/
-  /*construct a new Google map object and add properties to the map*/
-
-   function initMap() {
-  var london = {lat: 51.509, lng: -0.076};
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: london
-  });
-  var marker = new google.maps.Marker({
-    position: london,
-    map: map
-  });
-}
-
 
 
 /*Order Online page - form validation function*/
@@ -99,6 +84,7 @@ var storeLookup = {
 }
 
 
+
 /*Order Online page - product availability function. Use of Arrays*/
 
 
@@ -141,7 +127,6 @@ if (cakeAvailability.value === quantityLookup [0]) {
     }
     
   }
-
 
 
 

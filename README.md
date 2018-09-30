@@ -23,7 +23,7 @@ Using the technologies above the below Website features were achieved:
 This includes Bootstrap nav bar, a CSS animated banner directing users to the online booking page using JQuery, a JavaScript store look-up and store opening times.
 
 2. ## About Us page
-This includes Boostrap nav bar, jumbotron div and modal
+This includes Boostrap nav bar, jumbotron div and modal.
 
 3. ## Bakery Products
 This page has an audio file playing Mozart, a Bootstrap carousel and thumbnails. There is also a translate feature using JavaScript.
@@ -34,7 +34,7 @@ The order online page has a HTML form for users to complete using JavaScript cod
 5. ## Payment Page
 This is a short form in order for users to complete payment. Users are redirected after successfully filling out the order online form.
 
-My own JavaScript and JQuery files are found under js folder.
+My own JavaScript and JQuery files are found under the js folder.
 
 ### Installation
 
@@ -44,17 +44,17 @@ The below table explains how to deploy the application.
 
 ```sh
 
-1. Download all files from https://github.com/ChristineMWilde/Stream_One_Project_GH. 
+1. For the live version please go to: [https://gallant-agnesi-c75db0.netlify.com/home.html](https://gallant-agnesi-c75db0.netlify.com/home.html)
 
-2. The test folder can be excluded if needed.
+2. To run locally download all files from https://github.com/ChristineMWilde/Stream_One_Project_GH.
 
-3. The prototype folder can be excluded if needed.
+3. The test folder can be excluded if needed.
 
-4. Click on home.html file. Once the page launches users can navigate all other html pages using the Bootstrap navbar.
+4. The prototype folder can be excluded if needed.
 
-5. Please read "FinalProjectStreamOne.doc" for detailed information on this project. This document is found under the folder "Documentation for project" folder
+5. Click on home.html file. Once the page launches users can navigate all other html pages using the Bootstrap navbar.
 
-6. For the live version please go to: https://gallant-agnesi-c75db0.netlify.com/home.html
+6. Please read "FinalProjectStreamOne.doc" for detailed information on this project. This document is found under the folder "Documentation for project" folder
 
 ```
 
@@ -62,7 +62,7 @@ The below table explains how to deploy the application.
 **TESTING observations:**
 
   * The DOM did not load property which is a [common error](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded)
-So an Event Listener property was added to the JavaScript files. 
+so an Event Listener property was added to the JavaScript files. 
   
   * JQuery was used for certain interactive coding but most of that was updated to use JavaScript instead e.g creating a dictionary for the Bakery Products translation feature.
 
