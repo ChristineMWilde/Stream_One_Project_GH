@@ -1,7 +1,3 @@
-BEAUTIFY CSS  BEAUTIFY CSS IN NEW WINDOW
-
- 
-Beautified CSS:
 /*Home page*/
 
 #home-image {
@@ -256,16 +252,18 @@ label.field {
 		width: 400px;
 	}
 	#myJumbrotron {
-		height: 500px;
-		width: 400px;
+		height: 530px;
+		width: 350px;
 		margin: 0 auto;
 		border-radius: 15px;
 		padding: 5px;
 		font-size: 10px;
 	}
+
 	#myModal {
-		width: 400px;
+		width: 350px;
 	}
+
 	.form-container {
 		width: 400px;
 		margin: 0px;
