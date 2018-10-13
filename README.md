@@ -1,6 +1,8 @@
 
 # Christine Wilde's Stream One Project
 
+[Cinnamon Magic Austria](https://gallant-agnesi-c75db0.netlify.com/)
+
 Please note the entire project is described under the "Documentation for Project" folder in the word document named FinalProjectStreamOne.doc.
 
 The aim of this project is to build a font-end responsive Website. I therefore chose to build an Austrian Bakery Website called **Cinnamon Magic Austria**
